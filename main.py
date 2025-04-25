@@ -1,6 +1,5 @@
 import streamlit as st
 import plotly_express as px
-from scipy.ndimage import label
 
 from backend import get_data, get_country
 
