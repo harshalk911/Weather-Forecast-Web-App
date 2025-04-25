@@ -15,7 +15,7 @@ place = st.text_input("Location: ", placeholder="Enter the name of City or Town"
 days = st.slider("Forecast Days:", min_value=1, max_value=5, help="Select number of days")
 
 option = st.selectbox("Select data to view:",
-                      ("Temperature","Sky"))
+                      ("Temperature","Sky Condition"))
 
 
 if place:
@@ -30,7 +30,7 @@ if place:
             figure = px.line(x=date, y=temp, labels={"x":"Date", "y": "Temperature(C)"})
             st.plotly_chart(figure)
 
-        if option == "Sky":
+        if option == "Sky Condition":
             sky_condition = [dict["weather"][0]["main"] for dict in filtered_data]
             date = [dict["dt_txt"] for dict in filtered_data]
             image_label = [s + "\n" + d for s, d in zip(sky_condition, date)]
