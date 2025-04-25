@@ -1,3 +1,3 @@
 # Weather Forecast Web App
 
-## This app shows the temperature and sky status for the next days for any place entered.
+## Weather Forcast is a sleek, REST API-powered web app built with Streamlit that delivers accurate 5-day weather forecasts. It fetches real-time data for any location, displaying temperature trends and sky conditions in a clean, user-friendly interface. Designed for quick insights and smart planning,
